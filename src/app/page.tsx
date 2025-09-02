@@ -1,8 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import { motion } from "framer-motion";
-import { CheckCircle2 } from "lucide-react";
 import { Header } from "@/components/layout/header";
 import { Button } from "@/components/ui/button";
 import {
@@ -14,6 +11,9 @@ import {
 } from "@/components/ui/card";
 import globeImage from "@/images/globe.svg";
 import nextImage from "@/images/next.svg";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { CheckCircle2 } from "lucide-react";
 
 const containerVariants = {
   hidden: { opacity: 0 },
