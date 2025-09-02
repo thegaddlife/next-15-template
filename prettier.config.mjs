@@ -19,7 +19,7 @@ const config = {
     "^@/(.*)$",
     "^[./]",
   ],
-  importOrderSeparation: true,
+  importOrderSeparation: false,
   importOrderSortSpecifiers: true,
 };
 
