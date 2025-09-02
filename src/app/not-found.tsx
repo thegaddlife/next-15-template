@@ -1,6 +1,6 @@
-  import { Button } from '@/components/ui/button'
-import { Container } from '@/components/layout/container'
-import Link from 'next/link'
+import { Container } from "@/components/layout/container";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
@@ -17,9 +17,8 @@ export default function NotFound() {
         </p>
         <Button asChild variant="secondary" className="mt-4">
           <Link href="/">Go back home</Link>
-          Go back home
         </Button>
       </div>
     </Container>
-  )
+  );
 }
