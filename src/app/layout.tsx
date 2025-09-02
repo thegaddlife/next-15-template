@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import type { Metadata } from "next";
+import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "Next 15 Template",
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="antialiased" suppressHydrationWarning>
-      <body className="antialiased">{children}</body>
+      <body className="bg-zinc-100 antialiased dark:bg-slate-900">
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }
