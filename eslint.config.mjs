@@ -1,6 +1,6 @@
-import { FlatCompat } from '@eslint/eslintrc';
-import { dirname } from 'path';
-import { fileURLToPath } from 'url';
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+import { FlatCompat } from "@eslint/eslintrc";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -12,23 +12,23 @@ const compat = new FlatCompat({
 const eslintConfig = [
   {
     ignores: [
-      'node_modules/**',
-      '.next/**',
-      'out/**',
-      'build/**',
-      'next-env.d.ts',
-      '.agent-os/**',
-      '.vscode/**',
+      "node_modules/**",
+      ".next/**",
+      "out/**",
+      "build/**",
+      "next-env.d.ts",
+      ".agent-os/**",
+      ".vscode/**",
     ],
   },
-  ...compat.extends('next/core-web-vitals', 'next/typescript', 'prettier'),
+  ...compat.extends("next/core-web-vitals", "next/typescript", "prettier"),
   {
     ignores: [
-      'node_modules/**',
-      '.next/**',
-      'out/**',
-      'build/**',
-      'next-env.d.ts',
+      "node_modules/**",
+      ".next/**",
+      "out/**",
+      "build/**",
+      "next-env.d.ts",
     ],
   },
 ];

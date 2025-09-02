@@ -8,16 +8,17 @@ const config = {
   trailingComma: "es5",
   tabWidth: 2,
   useTabs: false,
-  plugins: ["@ianvs/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+  plugins: [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss",
+  ],
   importOrder: [
     "^react$",
     "^next",
     "<THIRD_PARTY_MODULES>",
     "^@/(.*)$",
-    "^[./]"
+    "^[./]",
   ],
-  importOrderSeparation: true,
-  importOrderSortSpecifiers: true,
 };
 
 export default config;
