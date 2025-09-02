@@ -1,5 +1,7 @@
 # Next.js 15 Template
 
+![Build Status](https://github.com/thegaddlife/next-15-template/workflows/Build/badge.svg)
+
 A modern, production-ready Next.js template with TypeScript, Tailwind CSS, shadcn/ui, and essential development tools.
 
 ## Features
