@@ -84,6 +84,7 @@ export default function Home() {
                   duration: 4,
                   ease: "easeInOut",
                 }}
+                style={{ willChange: "transform" }}
               >
                 <Image
                   src={nextImage}
@@ -97,6 +98,7 @@ export default function Home() {
               <motion.div
                 animate={{ rotate: [0, 360] }}
                 transition={{ repeat: Infinity, duration: 8, ease: "linear" }}
+                style={{ willChange: "transform" }}
               >
                 <Image
                   src={globeImage}
@@ -132,7 +134,13 @@ export default function Home() {
           >
             <motion.div
               whileHover={{ scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              transition={{ 
+                type: "spring", 
+                stiffness: 400, 
+                damping: 25,
+                mass: 0.5
+              }}
+              style={{ willChange: "transform" }}
             >
               <Card>
                 <CardHeader>
@@ -145,12 +153,26 @@ export default function Home() {
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    transition={{ 
+                      type: "spring", 
+                      stiffness: 500, 
+                      damping: 30,
+                      mass: 0.3
+                    }}
+                    style={{ willChange: "transform" }}
                   >
                     <Button className="w-full">Primary Button</Button>
                   </motion.div>
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    transition={{ 
+                      type: "spring", 
+                      stiffness: 500, 
+                      damping: 30,
+                      mass: 0.3
+                    }}
+                    style={{ willChange: "transform" }}
                   >
                     <Button variant="secondary" className="w-full">
                       Secondary Button
@@ -159,6 +181,13 @@ export default function Home() {
                   <motion.div
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
+                    transition={{ 
+                      type: "spring", 
+                      stiffness: 500, 
+                      damping: 30,
+                      mass: 0.3
+                    }}
+                    style={{ willChange: "transform" }}
                   >
                     <Button variant="outline" className="w-full">
                       Outline Button
@@ -170,7 +199,13 @@ export default function Home() {
 
             <motion.div
               whileHover={{ scale: 1.02 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              transition={{ 
+                type: "spring", 
+                stiffness: 400, 
+                damping: 25,
+                mass: 0.5
+              }}
+              style={{ willChange: "transform" }}
             >
               <Card>
                 <CardHeader>
@@ -204,7 +239,13 @@ export default function Home() {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              transition={{ 
+                type: "spring", 
+                stiffness: 500, 
+                damping: 30,
+                mass: 0.3
+              }}
+              style={{ willChange: "transform" }}
             >
               <Button size="lg">Get Started</Button>
             </motion.div>
