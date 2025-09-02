@@ -13,10 +13,10 @@ const config = {
     "prettier-plugin-tailwindcss",
   ],
   importOrder: [
+    "^@/(.*)$",
     "^react$",
     "^next",
     "<THIRD_PARTY_MODULES>",
-    "^@/(.*)$",
     "^[./]",
   ],
   importOrderSeparation: false,
