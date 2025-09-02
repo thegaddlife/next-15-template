@@ -1,39 +1,65 @@
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center p-8">
-      <main className="text-center">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <h1 className="mt-8 text-4xl font-bold">Next.js 15 Template</h1>
-        <p className="mt-4 text-gray-600 dark:text-gray-400">
-          A modern template with TypeScript, Tailwind CSS, and essential dev
-          tools
-        </p>
-        <div className="mt-8 flex gap-4">
-          <a
-            className="rounded-lg bg-blue-600 px-6 py-3 text-white transition-colors hover:bg-blue-700"
-            href="https://nextjs.org/docs"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read Docs
-          </a>
-          <a
-            className="rounded-lg border border-gray-300 px-6 py-3 transition-colors hover:bg-gray-50 dark:border-gray-600 dark:hover:bg-gray-800"
-            href="https://github.com/vercel/next.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            GitHub
-          </a>
+      <main className="w-full max-w-2xl space-y-8">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold">Next.js 15 Template</h1>
+          <p className="text-muted-foreground mt-4">
+            A modern template with TypeScript, Tailwind CSS, shadcn/ui, and
+            essential dev tools
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <Card>
+            <CardHeader>
+              <CardTitle>Components</CardTitle>
+              <CardDescription>
+                Pre-configured shadcn/ui components with slate theme
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="space-y-2">
+              <Button className="w-full">Primary Button</Button>
+              <Button variant="secondary" className="w-full">
+                Secondary Button
+              </Button>
+              <Button variant="outline" className="w-full">
+                Outline Button
+              </Button>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardHeader>
+              <CardTitle>Features</CardTitle>
+              <CardDescription>
+                Everything you need to start your next project
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-2 text-sm">
+                <li>✅ Next.js 15 with App Router</li>
+                <li>✅ TypeScript & Tailwind CSS</li>
+                <li>✅ shadcn/ui components</li>
+                <li>✅ ESLint & Prettier</li>
+                <li>✅ Import sorting</li>
+                <li>✅ pnpm package manager</li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+
+        <div className="text-center">
+          <Button size="lg">Get Started</Button>
         </div>
       </main>
     </div>
