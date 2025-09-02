@@ -9,7 +9,7 @@ const config = {
   tabWidth: 2,
   useTabs: false,
   plugins: [
-    "@ianvs/prettier-plugin-sort-imports",
+    "@trivago/prettier-plugin-sort-imports",
     "prettier-plugin-tailwindcss",
   ],
   importOrder: [
@@ -19,6 +19,8 @@ const config = {
     "^@/(.*)$",
     "^[./]",
   ],
+  importOrderSeparation: true,
+  importOrderSortSpecifiers: true,
 };
 
 export default config;

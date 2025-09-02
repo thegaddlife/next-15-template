@@ -50,9 +50,9 @@ public/feed.xml
 next-env.d.ts
 
 # shadcn components
-components/ui/
-lib/utils.ts
-hooks/use-mobile.ts
+src/components/ui/
+src/lib/utils.ts
+src/hooks/use-mobile.ts
 
 # agent-os
 .agent-os/
